@@ -5,4 +5,6 @@ This repository contains work completed during Spring 2020 in Dr. Murray's DIG46
 The *ice* folder contains in-class exercises. 
 
 ## About Me
-This should be replaced.
+Highly motivated and detail-oriented Digital Media student at the University of Central Florida. Looking to fill a position as a UI/UX Designer. Wishing to use front-end design and visual communication skills to help a company with any upcoming projects.
+
+[Katherine Leung](https://www.linkedin.com/in/katherine-leung-6b1324138/)
