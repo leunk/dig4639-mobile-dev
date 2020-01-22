@@ -13,7 +13,10 @@
                 "<node_internals>/**"
             ]
         },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 39cb5ba265c8905a20e78b573300a0dff3e8fa61
         {
             "type": "chrome",
             "request": "launch",
