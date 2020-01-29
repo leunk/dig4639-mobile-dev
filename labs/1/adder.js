@@ -8,7 +8,7 @@ class Adder{
         return(this.a + this.b);
     }
     render(){
-        let sentence = `The sum of ${this.a} and ${this.b} is ${this.sum()}`
+        let sentence = `<p>The sum of ${this.a} and ${this.b} is ${this.sum()}</p>`
         console.log(sentence)
     }
 }
