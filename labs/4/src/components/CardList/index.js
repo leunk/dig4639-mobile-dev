@@ -7,7 +7,7 @@ class CardList extends React.Component{
         super(props);
         this.state = {cards: data.cards}
     }
-
+    //to remove the card
     remove = (event) => {
         let cardtitle = event.target.getAttribute("cardtitle");
         let localCards = this.state.cards;
