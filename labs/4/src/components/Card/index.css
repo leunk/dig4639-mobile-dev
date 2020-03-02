@@ -2,8 +2,13 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     max-width: 80%;
     margin: auto;
+    margin-top: 10px;
     text-align: center;
     padding: 1em;
+    background-color: #41c0d1;
+    font-family: Tahoma;
+    color: #571d63;
+    border: 2px dotted #571d63;
 }
 .close{
     font-size: 1.5em;

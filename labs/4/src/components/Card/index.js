@@ -4,10 +4,14 @@ import "./index.css";
 class Card extends React.Component{
     render(){
         return(
-            <div className = "card">
-                {this.props.content}
+            <div className="card">
+                <span className = "close" 
+                onClick={this.props.clickClose}
+                datatitle={this.props.title}>&times;</span>
+                <h3>{this.props.title}</h3>
+                <p>{this.props.content}</p>
             </div>
-        )
+        );
     }
 }
 export default Card;

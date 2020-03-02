@@ -1,13 +1,14 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
-import Card from "./components/Card";
+// import './App.css';
+import CardList from './components/CardList';
+
 
 class App extends React.Component{
   render(){
     return(
-      <div>
-        <Card content="This is a card!"></Card>
+      <div className="App">
+        <CardList />
       </div>
     );
   }
