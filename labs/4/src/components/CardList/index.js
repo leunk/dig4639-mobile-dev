@@ -9,7 +9,7 @@ class CardList extends React.Component{
     }
 
     remove = (event) => {
-        let cardtitle = event.target.getAtrribute("cardtitle");
+        let cardtitle = event.target.getAttribute("cardtitle");
         let localCards = this.state.cards;
         let changed = localCards.filter((card) => {
             return card.title !== cardtitle;
