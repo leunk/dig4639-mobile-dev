@@ -12,7 +12,7 @@ class Card extends React.Component{
     }
 
     componentDidMount(){
-        fetch('https://api.weather.gov/gridpoints/MLB/25,26/forecast')
+        fetch('https://api.weather.gov/gridpoints/MLB/25,69/forecast')
         .then(res => res.json())
         .then((result) => {
             //let periods = result.properties.periods;
