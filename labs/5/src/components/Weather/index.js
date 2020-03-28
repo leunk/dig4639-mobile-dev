@@ -1,11 +1,9 @@
 import React from 'react';
 import './index.css';
-
 // import {View, Text} from 'react-native';
 
-
 class Weather extends React.Component{
-
+    //from lab4
     constructor(props){
         super(props);
 

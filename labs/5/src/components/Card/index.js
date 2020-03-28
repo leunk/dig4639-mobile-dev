@@ -38,7 +38,7 @@ class Card extends React.Component{
             />)}
             </>
 
-                //did not work
+                //did not work react-native can't compile
             // <View>
             //     {
             //         this.state.periods.map((value, index) => {
