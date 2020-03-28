@@ -1,32 +1,56 @@
 import React from 'react';
-import './index.css';
-// import {View, Text} from 'react-native';
+import Card from '../Card/index.js';
+//import './index.css';
 
-
+//from module Native: Working with Input
 class Weather extends React.Component{
-
     constructor(props){
         super(props);
 
         this.state = {
-            name: '',
-            temperature: 0,
-            temperatureUnit: '',
-            detailedForecast: '',
+            periods : []
         }
     }
 
+    componentDidMount(){
+        fetch('https://api.weather.gov/gridpoints/MLB/25,69/forecast')
+        .then(res => res.json())
+        .then((result) => {
+            let periods = result.properties.periods;
+
+            this.setState({
+                periods: result.properties.periods
+            });
+        })
+        //.catch((error) => {console.log(error)});
+    }
+
     render(){
+        //from example wk 
         return(
-            <div className ="card">
-                <h2>{this.props.name}</h2>
-                <h4>{this.props.temperature}{this.props.temperatureUnit}</h4>
-                <p>{this.props.detailedForecast}</p>
-            </div>
+            <>
+            {this.state.periods
+            .map((v) => <Weather key = {v.number}
+            name = {v.name}
+            temperature = {v.temperature}
+            temperatureUnit = {v.temperatureUnit}
+            detailedForecast = {v.detailedForecast}
+            />)}
+            </>
+
+                //did not work
+            // <View>
+            //     {
+            //         this.state.periods.map((value, index) => {
+            //             return <View key={index}>
+            //                 <Text>Temperature {value.temperature}{value.temperatureUnit}</Text>
+            //                 <Text>{value.detailedForecast}</Text>
+            //             </View>
+            //         })
+            //     }
+            // </View>
         )
     }
-        
 }
-
 
 export default Weather;
