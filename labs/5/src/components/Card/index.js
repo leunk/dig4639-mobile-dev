@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Weather/index.js';
+import Weather from '../Weather/index.js';
 //import './index.css';
 
 //from module Native: Working with Input
@@ -16,13 +16,13 @@ class Card extends React.Component{
         fetch('https://api.weather.gov/gridpoints/MLB/25,69/forecast')
         .then(res => res.json())
         .then((result) => {
-            let periods = result.properties.periods;
+            //let periods = result.properties.periods;
 
             this.setState({
                 periods: result.properties.periods
             });
         })
-        .catch((error) => {console.log(error)});
+        //.catch((error) => {console.log(error)});
     }
 
     render(){
