@@ -1,0 +1,114 @@
+[
+    {
+        "question": "What does JSON stand for?",
+        "possibleAnswers":
+        [
+            {
+                "text" : "Java Object Notation",
+                "correct" : false
+            },
+            {
+                "text": "JavaScript Object Notation",
+                "correct": true
+            },
+            {
+                "text": "JavaScript Option Notation",
+                "correct": false
+            },
+            {
+                "text": "JavaScript Order Notation",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "True or False. Components take care of themselves?",
+        "possibleAnswers": 
+        [
+            {
+                "text": "True",
+                "correct": true
+            },
+            {
+                "text": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What program provides browsers with files and data upon request?",
+        "possibleAnswers": [
+            {
+                "text": "database",
+                "correct": false
+            },
+            {
+                "text": "server",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Who is considered as React Native's developer?",
+        "possibleAnswers": [
+            {
+                "text": "Twitter",
+                "correct": false
+            },
+            {
+                "text": "Facebook",
+                "correct": true
+            },
+            {
+                "text": "Snapchat",
+                "correct": false
+            },
+            {
+                "text": "LinkedIn",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "When was the JavaScript library first released?",
+        "possibleAnswers": [
+            {
+                "text": "2014",
+                "correct": false
+            },
+            {
+                "text": "2017",
+                "correct": false
+            },
+            {
+                "text": "2013",
+                "correct": true
+            },
+            {
+                "text": "2015",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "How many elements does a React component return?",
+        "possibleAnswers": [
+            {
+                "text": "2 Elements",
+                "correct": false
+            },
+            {
+                "text": "1 Element",
+                "correct": false
+            },
+            {
+                "text": "Multiple Elements",
+                "correct": true
+            },
+            {
+                "text": "None of the above",
+                "correct": false
+            }
+        ]
+    }
+]
