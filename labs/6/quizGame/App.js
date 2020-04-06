@@ -142,9 +142,9 @@ const styles = StyleSheet.create({
   scores: {
     color: "#460578",
     fontSize: 20,
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: {width: -1, height: 1},
-    textShadowRadius: 10
+    // textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    // textShadowOffset: {width: -1, height: 1},
+    // textShadowRadius: 5
   }
 
 
