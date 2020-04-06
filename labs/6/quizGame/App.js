@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, Button, View} from 'react-native';
+import {Header} from 'react-native-elements';
 import './questions.json';
 
 //refer to ICE-10 Kahoot 
@@ -117,7 +118,9 @@ class App extends React.Component{
   
         <Text style = {styles.quest}>React Questions</Text>
   
-        <TitlePage>Test Your Knowledge</TitlePage>
+        <Header>
+          centerComponent = {{text: 'Test Your Knowledge' , style: {color: '#fff'}}}
+        </Header>
   
       </View>
     );
@@ -134,11 +137,11 @@ const styles = StyleSheet.create({
   },
   quest: {
     color: "#1a1d30",
-    fontSize: "20px",
+    fontSize: 20,
   },
   scores: {
     color: "#460578",
-    fontSize: "20px",
+    fontSize: 20,
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: {width: -1, height: 1},
     textShadowRadius: 10
