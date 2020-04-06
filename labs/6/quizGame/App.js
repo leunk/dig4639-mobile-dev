@@ -12,6 +12,7 @@ const FINAL_STATE = 2
 class QuizQuestion extends React.Component{
   render(){
     return<>
+    {/* //changed from ICE10 to reflect react-native elem */}
     <Text>{this.props.question}</Text>
     {this.props.answers.map((v,i) => 
     <Button color = "#2b4bd9" title = {v.text} onPress = {() => this.props.nextQuestion(v.correct)} key = {i} 
