@@ -9,6 +9,7 @@ const TITLE_STATE = 0
 const QUESTION_STATE = 1
 const FINAL_STATE = 2
 
+//styling for button
 function StartButton(props)  {
   return <TouchableOpacity onPress={props.onPress}
     style={styles.start}>
@@ -48,7 +49,7 @@ class TitlePage extends React.Component{
     if(correct){
       this.setState({score: this.state.score + 1})
     }
-    
+    //added conditional statement for FINAL_STATE so that quiz can end
     if(this.state.currentQuestion == questions.length - 1) {
       console.log("DONE")
       this.setState({
