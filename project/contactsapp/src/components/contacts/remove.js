@@ -1,5 +1,6 @@
 import React from 'react';
 
+//var to call database/server stuff
 const HEADERS = {
     "Method": "GET",
     "headers": {

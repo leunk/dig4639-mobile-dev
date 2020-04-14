@@ -1,5 +1,6 @@
 import React from 'react';
-//var for server/database stuff
+
+//var for insomnia server/database stuff
 const HEADERS = {
     "Method" : "GET",
     "headers": {
@@ -12,12 +13,10 @@ const HEADERS = {
 class Add extends React.Component{
     constructor(props){
         super(props);
-
         //createRef 
         this.nameRef = React.createRef();
         this.numberRef = React.createRef();
         this.onSubmit = props.onSubmit;
-
     }
 
     getInput = (event) => {
