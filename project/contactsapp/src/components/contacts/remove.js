@@ -22,7 +22,7 @@ class Remove extends React.Component{
 
 conDel = (event) => {
     let newHeaders = {...HEADERS,
-    "Method": "POST",
+    "method": "POST",
     body: JSON.stringify({
         position: this.remRef.current.value
     })
@@ -42,9 +42,10 @@ render(){
     return(
         <div>
             <h2>Remove</h2>
-            <form onSubmit = {this.handleSubmit}>
-                <label className="name">Position</label>
-                <input type ="text" ref={this.textInput} id="position" /><br />
+            <form onSubmit = {this.conDel}>
+                <label className="name">Position</label> <br />
+                <input type ="text" ref={this.remRef} id="position" placeholder="Enter position..." />
+                <br /> <br />
                 <button type ="submit">Submit</button>
 
             </form>

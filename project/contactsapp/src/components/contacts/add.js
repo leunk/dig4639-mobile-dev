@@ -45,11 +45,12 @@ class Add extends React.Component{
                 <h2>Add</h2>
                 <form onSubmit = {this.getInput}>
                     <label className = "name">Name</label><br />
-                    <input type = "text" ref = {this.nameRef} />
+                    <input type = "text" ref = {this.nameRef} placeholder = "Enter name..." />
+                    <br />
                     <br />
                     <label className = "name">Number</label><br />
-                    <input type = "number" ref = {this.numberRef} />
-
+                    <input type = "number" ref = {this.numberRef} placeholder = "Enter number..."  />
+                    <br /> <br />
                     <button>Add Contact</button>
                 </form>
             </div>

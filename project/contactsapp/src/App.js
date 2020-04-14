@@ -8,16 +8,19 @@ import Profile from './components/Profile/index';
 class App extends React.Component{
   render(){
     return(
-      <div>
-        <Contacts/>
-        <br />
-        <Add />
-        <br />
-        <Profile />
-        <br />
-        <Remove />
-        <br />
-      </div>
+      <body>
+        <div className="center">
+          <Contacts/>
+          <br />
+          <Add />
+          <br />
+          <Profile />
+          <br />
+          <Remove />
+          <br />
+        </div>
+      </body>
+      
     );
   }
 }
