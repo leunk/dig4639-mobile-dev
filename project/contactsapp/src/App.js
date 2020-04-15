@@ -8,7 +8,7 @@ import Profile from './components/Profile/index';
 class App extends React.Component{
   render(){
     return(
-      <body>
+      <div className="body">
         <div className="center">
           <Contacts/>
           <br />
@@ -19,8 +19,7 @@ class App extends React.Component{
           <Remove />
           <br />
         </div>
-      </body>
-      
+      </div>
     );
   }
 }

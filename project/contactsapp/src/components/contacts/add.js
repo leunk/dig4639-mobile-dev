@@ -50,11 +50,16 @@ class Add extends React.Component{
                     <label className = "name">Number</label><br />
                     <input type = "number" ref = {this.numberRef} placeholder = "Enter number..."  />
                     <br /> <br />
-                    <button>Add Contact</button>
+                    <button type="submit">Add Contact</button>
                 </form>
             </div>
         );
     }
+
+    //added so that page refreshes after click
+    // pageRefresh(){
+    //     window.location.reload();
+    // }
 }
 
 export default Add;

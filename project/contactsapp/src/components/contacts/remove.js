@@ -44,15 +44,22 @@ render(){
         <div>
             <h2>Remove</h2>
             <form onSubmit = {this.conDel}>
+
                 <label className="name">Position</label> <br />
                 <input type ="text" ref={this.remRef} id="position" placeholder="Enter position..." />
+
                 <br /> <br />
+                
                 <button type ="submit">Submit</button>
 
             </form>
         </div>
     );
 }
+//not working ugh -->stackoverflow 
+// pageRefresh(){
+//     window.location.reload();
+// }
 }
 
 export default Remove;
