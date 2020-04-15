@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Contacts from './components/contacts/index';
+import Contacts from './components/contacts';
 import Add from './components/contacts/add';
 import Remove from './components/contacts/remove';
 import Profile from './components/Profile/index';
