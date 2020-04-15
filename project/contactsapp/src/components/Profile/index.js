@@ -19,7 +19,7 @@ class Profile extends React.Component{
 
     render(){
         return(
-            <div className = "profile">
+            <div>
                 <h2>Profile</h2>
                 {
                     this.state.profile.map((value, index) => {
